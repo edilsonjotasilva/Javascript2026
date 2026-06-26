@@ -25,18 +25,29 @@ const caixa1 = document.getElementById("caixa1");
 //         console.log("curso " +cursosC1[index].innerHTML+ " encontrado na posição " + index);
 //     }
 // });
-const cursos = ["HTML", "CSS", "JavaScript", "React", "Node.js", "Python", "Mysql", "Postgresql", "Rubi", "Arduino", "C++", "PHP"];
-cursos.map((ele, index) => {
-    const novoElemento = document.createElement("div");
-    novoElemento.classList.add("curso", "c1");
-    if(index > 5){
-        novoElemento.classList.add("curso", "c2");
-    }
-    if(index == 8){
-        novoElemento.addEventListener("click", (evento) => {
-            novoElemento.classList.toggle("selecionado");
-        });
-    }
-    novoElemento.innerHTML = ele;
-    caixa1.appendChild(novoElemento);
+// const cursos = ["HTML", "CSS", "JavaScript", "React", "Node.js", "Python", "Mysql", "Postgresql", "Rubi", "Arduino", "C++", "PHP"];
+// cursos.map((ele, index) => {
+//     const novoElemento = document.createElement("div");
+//     novoElemento.classList.add("curso", "c1");
+//     if(index > 5){
+//         novoElemento.classList.add("curso", "c2");
+//     }
+//     if(index == 8){
+//         novoElemento.addEventListener("click", (evento) => {
+//             novoElemento.classList.toggle("selecionado");
+//         });
+//     }
+//     novoElemento.innerHTML = ele;
+//     caixa1.appendChild(novoElemento);
+
+//     novoElemento.addEventListener("click", (evento) => {
+//         caixa1.removeChild(evento.target);
+//     });
+// });
+todosCursos.map((curso, index) => {
+    console.log(curso);
+    curso.addEventListener("click", (evento) => {
+        cursoRemover = evento.target;
+        caixa1.removeChild(cursoRemover);
+    });
 });
