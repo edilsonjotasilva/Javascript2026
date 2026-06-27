@@ -27,16 +27,21 @@ const criarNovoCurso = (curso) => {
     comandos.appendChild(rb);
     return novoElemento;
 }
-cursos.map((el, index) => {
-    const novoElemento = criarNovoCurso(el);
+cursos.map((curso, index) => { // HTML", "CSS", "JavaScript", "React", "Node.js", "Python", "Mysql"
+    const novoElemento = criarNovoCurso(curso);
     caixaCursos.appendChild(novoElemento);
     indice++;
 });
 const radioSelecionado = () => {
     const TodosRadios = [...document.querySelectorAll("input[type='radio']")];
     let RadioSelecionado = TodosRadios.filter(radio => radio.checked);
+    // console.log(RadioSelecionado[0]);
     return RadioSelecionado[0];
 }
+/**
+ * o código abaixo é usado somente para mostrar o curso selecionado
+ * se remover esse código e o botão btnCursoSelecionado, o programa continuará funcionando normalmente
+ */
 btnCursoSelecionado.addEventListener("click", (evento) => {
     const radSelec = radioSelecionado();
     if(radSelec != undefined){
@@ -46,14 +51,15 @@ btnCursoSelecionado.addEventListener("click", (evento) => {
     }else{
         alert("Nenhum curso selecionado");
     }
-    
+
+
 });
 
 btnRemoverCurso.addEventListener("click", (evento) => {
     const removeSelected = radioSelecionado();
     try{
         const elemento = removeSelected.parentNode.parentNode;
-        elemento.remove(evento);
+        elemento.remove();
     }catch(erro){
         alert("Nenhum curso selecionado");
     }
