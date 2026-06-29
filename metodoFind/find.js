@@ -2,7 +2,8 @@ const p_array = document.getElementById("array");
 const txt_pesquisar = document.getElementById("txt_pesquisar");
 const btnPesquisar = document.querySelector("#btnPesquisar");
 const resultado = document.getElementById("resultado");
-const elementos_array = [10,5,3,22,15,74,6,7,8,9];
+// const elementos_array = [10,5,3,22,15,74,6,7,8,9];
+const elementos_array = ["maria", "pedro", 'joao', "felipe"];
 p_array.innerHTML = `[${elementos_array}]`;
 
 btnPesquisar.addEventListener("click", (pesquisar)=>{
