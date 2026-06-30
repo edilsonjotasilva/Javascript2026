@@ -3,7 +3,7 @@ const txt_pesquisar=document.querySelector("#txt_pesquisar")
 const btnPesquisar=document.querySelector("#btnPesquisar")
 const resultado=document.querySelector("#resultado")
 
-const elementos_array=[25,30,18,27,23]
+const elementos_array=[25,30,16,27,23]
 p_array.innerHTML="["+elementos_array+"]"
 
 btnPesquisar.addEventListener("click",(evt)=>{
