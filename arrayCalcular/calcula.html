@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcuar array</title>
+    <link rel="stylesheet" href="calcula.css">
+</head>
+<body>
+    <div id = "caixa" class = "caixa">
+        <div id="caixaV1" class="caixaValor">
+            <label for="valor1">Valor 01</label>
+            <input id="valor1" type="text" name="valor1" placeholder="0"/>
+        </div>
+        <div id="caixaV2" class="caixaValor">
+            <label for="valor2">Valor 02</label>
+            <input id="valor2" type="text" name="valor2" placeholder="0">
+        </div>
+        <div id="caixaResult" class="caixaValor">
+            <label for="valorResult">Resultado:</label>
+            <input id="valorResult"value="0" type="text" name="valorResult" placeholder="0">
+        </div>
+
+    </div>
+    <div class="caixabtn">
+        <button id="btnSomar" class="btnOperadores">+</button>
+        <button id="btnSubtrair" class="btnOperadores">-</button>   
+        <button id="btnMultiplicar" class="btnOperadores">*</button>    
+        <button id="btnDividir" class="btnOperadores">/</button>
+    </div>
+     
+    <script src="calcula.js"></script>
+</body>
+</html>

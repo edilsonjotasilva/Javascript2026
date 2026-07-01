@@ -1,0 +1,28 @@
+.caixa{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.caixaValor{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.caixaValor label{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.caixaValor input{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #CDCDCD;
+}
+.btnOperadores{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #CDCDCD;
+}
